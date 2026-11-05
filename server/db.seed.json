@@ -1,0 +1,461 @@
+{
+  "categorias": [
+    {
+      "id": 1,
+      "nombre": "Cortes",
+      "tipo": "Servicio",
+      "descripcion": "Cortes clásicos y modernos realizados por barberos certificados.",
+      "imagen": "https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": 2,
+      "nombre": "Barba y Afeitado",
+      "tipo": "Servicio",
+      "descripcion": "Perfilado, arreglo y afeitado tradicional a navaja.",
+      "imagen": "https://images.unsplash.com/photo-1621607512214-68297480165e?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": 3,
+      "nombre": "Styling",
+      "tipo": "Producto",
+      "descripcion": "Pomadas, ceras y fijadores para lograr tu estilo.",
+      "imagen": "https://images.unsplash.com/photo-1631730486572-226d1f595b68?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": 4,
+      "nombre": "Cuidado de Barba",
+      "tipo": "Producto",
+      "descripcion": "Aceites, bálsamos y shampoos para una barba sana.",
+      "imagen": "https://images.unsplash.com/photo-1621607512022-6aecc4fed814?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": 5,
+      "nombre": "Kits y Accesorios",
+      "tipo": "Producto",
+      "descripcion": "Sets de afeitado y herramientas de barbería.",
+      "imagen": "https://images.unsplash.com/photo-1589710751893-f9a6770ad71b?auto=format&fit=crop&w=600&q=80"
+    }
+  ],
+  "productos": [
+    {
+      "id": 1,
+      "codigo": "IB001",
+      "nombre": "Corte Clásico",
+      "categoriaId": 1,
+      "precio": 9000,
+      "precioOferta": null,
+      "stock": 30,
+      "stockCritico": 5,
+      "descripcion": "Corte tradicional a tijera y máquina con terminación prolija. Incluye lavado y peinado.",
+      "imagen": "https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": 2,
+      "codigo": "IB002",
+      "nombre": "Fade Moderno",
+      "categoriaId": 1,
+      "precio": 11000,
+      "precioOferta": 9900,
+      "stock": 25,
+      "stockCritico": 5,
+      "descripcion": "Degradado a máquina con difuminado perfecto y estilo actual. Ideal para un look limpio.",
+      "imagen": "https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": 3,
+      "codigo": "IB003",
+      "nombre": "Corte + Barba",
+      "categoriaId": 1,
+      "precio": 15000,
+      "precioOferta": 12900,
+      "stock": 20,
+      "stockCritico": 5,
+      "descripcion": "Combo completo: corte de pelo y perfilado de barba a navaja con toalla caliente.",
+      "imagen": "https://images.unsplash.com/photo-1621607512214-68297480165e?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": 4,
+      "codigo": "IB004",
+      "nombre": "Afeitado a Navaja",
+      "categoriaId": 2,
+      "precio": 8000,
+      "precioOferta": null,
+      "stock": 15,
+      "stockCritico": 4,
+      "descripcion": "Afeitado clásico con toalla caliente, espuma tradicional y navaja de acero.",
+      "imagen": "https://images.unsplash.com/photo-1493256338651-d82f7acb2b38?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": 5,
+      "codigo": "IB005",
+      "nombre": "Arreglo de Barba",
+      "categoriaId": 2,
+      "precio": 7000,
+      "precioOferta": null,
+      "stock": 3,
+      "stockCritico": 4,
+      "descripcion": "Perfilado y recorte de barba con definición de contornos a navaja.",
+      "imagen": "https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": 6,
+      "codigo": "IB006",
+      "nombre": "Pomada Clásica",
+      "categoriaId": 3,
+      "precio": 7990,
+      "precioOferta": null,
+      "stock": 40,
+      "stockCritico": 10,
+      "descripcion": "Pomada de fijación fuerte y acabado brillante, 100 gr. Base agua, fácil de lavar.",
+      "imagen": "https://images.unsplash.com/photo-1631730486572-226d1f595b68?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": 7,
+      "codigo": "IB007",
+      "nombre": "Cera Mate",
+      "categoriaId": 3,
+      "precio": 8490,
+      "precioOferta": 6990,
+      "stock": 6,
+      "stockCritico": 10,
+      "descripcion": "Cera de fijación media con acabado natural sin brillo, 85 gr.",
+      "imagen": "https://images.unsplash.com/photo-1631730486572-226d1f595b68?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": 8,
+      "codigo": "IB008",
+      "nombre": "Aceite para Barba",
+      "categoriaId": 4,
+      "precio": 6490,
+      "precioOferta": null,
+      "stock": 35,
+      "stockCritico": 8,
+      "descripcion": "Aceite hidratante con aroma amaderado, 30 ml. Suaviza y da brillo a la barba.",
+      "imagen": "https://images.unsplash.com/photo-1621607512022-6aecc4fed814?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": 9,
+      "codigo": "IB009",
+      "nombre": "Shampoo Sólido",
+      "categoriaId": 4,
+      "precio": 5990,
+      "precioOferta": null,
+      "stock": 22,
+      "stockCritico": 8,
+      "descripcion": "Shampoo natural para cabello y barba, larga duración y sin plásticos.",
+      "imagen": "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": 10,
+      "codigo": "IB010",
+      "nombre": "Kit de Afeitado",
+      "categoriaId": 5,
+      "precio": 24990,
+      "precioOferta": 19990,
+      "stock": 2,
+      "stockCritico": 3,
+      "descripcion": "Set completo: navaja, brocha, jabón y soporte de acero inoxidable.",
+      "imagen": "https://images.unsplash.com/photo-1589710751893-f9a6770ad71b?auto=format&fit=crop&w=600&q=80"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "run": "11111111-1",
+      "nombre": "Administrador",
+      "apellidos": "Iron Blade",
+      "email": "admin@ironblade.cl",
+      "password": "admin123",
+      "rol": "admin",
+      "telefono": "+56912345678",
+      "region": "Región Metropolitana de Santiago",
+      "comuna": "Providencia",
+      "direccion": "Av. Providencia 1234",
+      "departamento": "",
+      "fechaRegistro": "2026-08-01"
+    },
+    {
+      "id": 2,
+      "run": "22222222-2",
+      "nombre": "Cliente",
+      "apellidos": "Demo",
+      "email": "usuario@ironblade.cl",
+      "password": "user123",
+      "rol": "usuario",
+      "telefono": "+56987654321",
+      "region": "Región Metropolitana de Santiago",
+      "comuna": "Ñuñoa",
+      "direccion": "Irarrázaval 2500",
+      "departamento": "Depto 603",
+      "fechaRegistro": "2026-09-10"
+    },
+    {
+      "id": 3,
+      "run": "15555555-6",
+      "nombre": "Pedro",
+      "apellidos": "Soto Rojas",
+      "email": "pedro.soto@correo.cl",
+      "password": "pedro123",
+      "rol": "usuario",
+      "telefono": "+56911112222",
+      "region": "Región de Valparaíso",
+      "comuna": "Viña del Mar",
+      "direccion": "Av. Libertad 800",
+      "departamento": "",
+      "fechaRegistro": "2026-10-02"
+    },
+    {
+      "id": 4,
+      "run": "18888888-7",
+      "nombre": "Camila",
+      "apellidos": "Muñoz Pérez",
+      "email": "camila.munoz@correo.cl",
+      "password": "camila123",
+      "rol": "usuario",
+      "telefono": "+56933334444",
+      "region": "Región del Biobío",
+      "comuna": "Concepción",
+      "direccion": "Barros Arana 450",
+      "departamento": "Of. 12",
+      "fechaRegistro": "2026-10-20"
+    }
+  ],
+  "ordenes": [
+    {
+      "id": 1,
+      "codigo": "ORD00001",
+      "usuarioId": 2,
+      "fecha": "2026-10-05T15:20:00",
+      "estado": "pagada",
+      "cliente": {
+        "nombre": "Cliente",
+        "apellidos": "Demo",
+        "email": "usuario@ironblade.cl",
+        "telefono": "+56987654321"
+      },
+      "entrega": {
+        "tipo": "retiro",
+        "calle": "Irarrázaval 2500",
+        "departamento": "Depto 603",
+        "region": "Región Metropolitana de Santiago",
+        "comuna": "Ñuñoa",
+        "indicaciones": ""
+      },
+      "items": [
+        {
+          "productoId": 1,
+          "nombre": "Corte Clásico",
+          "precio": 9000,
+          "cantidad": 1,
+          "subtotal": 9000
+        },
+        {
+          "productoId": 6,
+          "nombre": "Pomada Clásica",
+          "precio": 7990,
+          "cantidad": 2,
+          "subtotal": 15980
+        }
+      ],
+      "subtotal": 24980,
+      "costoEnvio": 0,
+      "total": 24980
+    },
+    {
+      "id": 2,
+      "codigo": "ORD00002",
+      "usuarioId": 3,
+      "fecha": "2026-10-12T11:05:00",
+      "estado": "pagada",
+      "cliente": {
+        "nombre": "Pedro",
+        "apellidos": "Soto Rojas",
+        "email": "pedro.soto@correo.cl",
+        "telefono": "+56911112222"
+      },
+      "entrega": {
+        "tipo": "despacho",
+        "calle": "Av. Libertad 800",
+        "departamento": "",
+        "region": "Región de Valparaíso",
+        "comuna": "Viña del Mar",
+        "indicaciones": ""
+      },
+      "items": [
+        {
+          "productoId": 10,
+          "nombre": "Kit de Afeitado",
+          "precio": 19990,
+          "cantidad": 1,
+          "subtotal": 19990
+        },
+        {
+          "productoId": 8,
+          "nombre": "Aceite para Barba",
+          "precio": 6490,
+          "cantidad": 1,
+          "subtotal": 6490
+        }
+      ],
+      "subtotal": 26480,
+      "costoEnvio": 2990,
+      "total": 29470
+    },
+    {
+      "id": 3,
+      "codigo": "ORD00003",
+      "usuarioId": 2,
+      "fecha": "2026-10-21T18:40:00",
+      "estado": "rechazada",
+      "cliente": {
+        "nombre": "Cliente",
+        "apellidos": "Demo",
+        "email": "usuario@ironblade.cl",
+        "telefono": "+56987654321"
+      },
+      "entrega": {
+        "tipo": "retiro",
+        "calle": "Irarrázaval 2500",
+        "departamento": "Depto 603",
+        "region": "Región Metropolitana de Santiago",
+        "comuna": "Ñuñoa",
+        "indicaciones": ""
+      },
+      "items": [
+        {
+          "productoId": 3,
+          "nombre": "Corte + Barba",
+          "precio": 12900,
+          "cantidad": 1,
+          "subtotal": 12900
+        }
+      ],
+      "subtotal": 12900,
+      "costoEnvio": 0,
+      "total": 12900
+    },
+    {
+      "id": 4,
+      "codigo": "ORD00004",
+      "usuarioId": 4,
+      "fecha": "2026-10-28T10:15:00",
+      "estado": "pagada",
+      "cliente": {
+        "nombre": "Camila",
+        "apellidos": "Muñoz Pérez",
+        "email": "camila.munoz@correo.cl",
+        "telefono": "+56933334444"
+      },
+      "entrega": {
+        "tipo": "despacho",
+        "calle": "Barros Arana 450",
+        "departamento": "Of. 12",
+        "region": "Región del Biobío",
+        "comuna": "Concepción",
+        "indicaciones": ""
+      },
+      "items": [
+        {
+          "productoId": 7,
+          "nombre": "Cera Mate",
+          "precio": 6990,
+          "cantidad": 2,
+          "subtotal": 13980
+        },
+        {
+          "productoId": 9,
+          "nombre": "Shampoo Sólido",
+          "precio": 5990,
+          "cantidad": 1,
+          "subtotal": 5990
+        }
+      ],
+      "subtotal": 19970,
+      "costoEnvio": 2990,
+      "total": 22960
+    },
+    {
+      "id": 5,
+      "codigo": "ORD00005",
+      "usuarioId": 3,
+      "fecha": "2026-11-02T16:30:00",
+      "estado": "pagada",
+      "cliente": {
+        "nombre": "Pedro",
+        "apellidos": "Soto Rojas",
+        "email": "pedro.soto@correo.cl",
+        "telefono": "+56911112222"
+      },
+      "entrega": {
+        "tipo": "retiro",
+        "calle": "Av. Libertad 800",
+        "departamento": "",
+        "region": "Región de Valparaíso",
+        "comuna": "Viña del Mar",
+        "indicaciones": ""
+      },
+      "items": [
+        {
+          "productoId": 2,
+          "nombre": "Fade Moderno",
+          "precio": 9900,
+          "cantidad": 2,
+          "subtotal": 19800
+        },
+        {
+          "productoId": 5,
+          "nombre": "Arreglo de Barba",
+          "precio": 7000,
+          "cantidad": 1,
+          "subtotal": 7000
+        }
+      ],
+      "subtotal": 26800,
+      "costoEnvio": 0,
+      "total": 26800
+    }
+  ],
+  "blogs": [
+    {
+      "id": 1,
+      "titulo": "Cómo mantener tu fade entre visitas",
+      "autor": "Equipo Iron Blade",
+      "fecha": "2026-10-15",
+      "imagen": "https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=900&q=80",
+      "resumen": "Consejos simples para que tu degradado se vea fresco por más tiempo.",
+      "contenido": [
+        "Un fade bien hecho luce impecable los primeros días, pero el pelo crece cerca de un centímetro al mes y el degradado empieza a perder definición en dos o tres semanas.",
+        "Lava tu cabello con un shampoo suave y evita el agua muy caliente, que reseca el cuero cabelludo. Usa una pomada o cera de fijación media para controlar la parte superior sin apelmazar.",
+        "Lo ideal es agendar un repaso cada dos a tres semanas. En The Iron Blade puedes reservar tu hora online y elegir a tu barbero de confianza."
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Guía básica del cuidado de barba",
+      "autor": "Equipo Iron Blade",
+      "fecha": "2026-10-29",
+      "imagen": "https://images.unsplash.com/photo-1621607512022-6aecc4fed814?auto=format&fit=crop&w=900&q=80",
+      "resumen": "Aceite, bálsamo y peinado: la rutina mínima para una barba sana.",
+      "contenido": [
+        "Una barba cuidada empieza por la piel. Lávala tres o cuatro veces por semana con un shampoo específico, ya que el jabón común elimina la grasa natural y produce picazón.",
+        "Después del lavado aplica unas gotas de aceite para barba y masajea hasta la raíz. El aceite hidrata la piel; el bálsamo, en cambio, ayuda a dar forma y controlar el frizz.",
+        "Peina en la dirección del crecimiento y visita a tu barbero cada cuatro semanas para mantener los contornos definidos."
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Pomada, cera o gel: ¿cuál elegir?",
+      "autor": "Equipo Iron Blade",
+      "fecha": "2026-11-03",
+      "imagen": "https://images.unsplash.com/photo-1631730486572-226d1f595b68?auto=format&fit=crop&w=900&q=80",
+      "resumen": "Diferencias entre los fijadores más comunes y para qué estilo sirve cada uno.",
+      "contenido": [
+        "La pomada ofrece brillo y fijación flexible: es la opción clásica para peinados hacia atrás o con raya al lado.",
+        "La cera mate da un acabado natural, sin brillo, y es ideal para estilos texturizados o desordenados.",
+        "El gel fija con fuerza pero puede dejar el pelo rígido. Si no sabes cuál elegir, pregúntale a tu barbero en tu próxima visita."
+      ]
+    }
+  ],
+  "mensajes": [],
+  "reservas": []
+}
