@@ -79,7 +79,8 @@ Queda **fuera del alcance** de esta versión: pagos reales, envío real de corre
 ### 1.4 Referencias
 
 - Enunciado DSY1104 Evaluación Parcial N°2 y Anexo 1 (instrucciones y template HTML entregados por el docente).
-- Indicaciones del docente para la entrega: la aplicación debe ser funcional con json-server, poseer una API y enrutar componentes con react-router; las pruebas unitarias no serán evaluadas.
+- Indicaciones del docente para la entrega: la aplicación debe ser funcional con json-server, poseer una API y enrutar componentes con react-router.
+- Propuesta de pruebas con Jasmine del Anexo 1 (renderizado, props, estado y eventos).
 - ERS The Iron Blade v1.0 (`docs/ERS_The_Iron_Blade_v1.md`).
 - Documentación oficial de React, React Router, Bootstrap 5 y json-server.
 
@@ -167,7 +168,7 @@ La versión 2.0 es la evolución del sitio estático de la Evaluación 1. Se ree
 | RNF-05 | Compatibilidad | Navegadores modernos (Chrome, Edge, Firefox). |
 | RNF-06 | Estética | Identidad visual de barbería clásica (paleta oscura con dorado) heredada de la v1. |
 | RNF-07 | Accesibilidad | Etiquetas `label` asociadas, `aria-label`, `aria-invalid`, roles de alerta y textos alternativos. |
-| RNF-08 | Calidad | Pruebas unitarias automatizadas ejecutables con `npm test` (ver documento de cobertura). |
+| RNF-08 | Calidad | Pruebas unitarias automatizadas con **Jasmine + Karma** ejecutables con `npm test`: 61 pruebas de renderizado, props, estado, eventos, mocks de la API, lógica de negocio y rutas protegidas (ver `docs/Cobertura_Testing.md`). |
 
 ---
 
@@ -184,7 +185,9 @@ La versión 2.0 es la evolución del sitio estático de la Evaluación 1. Se ree
 | Bootstrap Icons | 1.x | Iconografía. |
 | json-server | 0.17.4 | API REST simulada a partir de `server/db.json`. |
 | concurrently | 9 | Levantar API y frontend con un solo comando. |
-| Vitest + Testing Library | 3 / 16 | Pruebas unitarias de lógica y componentes. |
+| Jasmine | 4.6 | Framework de pruebas unitarias (`describe`, `it`, `expect`, espías). |
+| Karma | 6.4 | Ejecutor de pruebas en navegador real (Chrome headless), con reporte de cobertura (`karma-coverage`). |
+| React Testing Library + user-event | 16 / 14 | Renderizar componentes y simular acciones del usuario dentro de las pruebas. |
 | Git / GitHub | — | Control de versiones colaborativo. |
 
 ### 4.2 Estructura del proyecto
@@ -202,7 +205,9 @@ src/
 ├── services/       compra.js (stock, totales, registro de orden), reportes.js (cálculos del panel)
 ├── utils/          validaciones.js, formato.js
 ├── data/           regiones.js (regiones y comunas)
-└── pages/          tienda/* y admin/*
+├── pages/          tienda/* y admin/*
+└── __tests__/      Pruebas unitarias Jasmine (*.spec.js) y utilidades compartidas
+karma.conf.cjs      Configuración de Karma (navegador, compilación, cobertura)
 server/db.json      Base de datos de la API (db.seed.json = datos iniciales)
 ```
 
@@ -254,7 +259,7 @@ Este mapa cubre todas las vistas del diagrama de flujo de navegación del Anexo 
 
 - Reemplazar json-server por un backend real (por ejemplo, Spring Boot o Node/Express) con autenticación por tokens y contraseñas cifradas.
 - Integrar una pasarela de pago y envío real de boletas por correo.
-- Ampliar la cobertura de pruebas a las páginas completas.
+- Ampliar las pruebas unitarias a las páginas completas (formularios del panel y checkout).
 
 ---
 

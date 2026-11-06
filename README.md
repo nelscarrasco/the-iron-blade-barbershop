@@ -2,7 +2,7 @@
 
 Tienda online de una barbería desarrollada para **DSY1104 - Desarrollo Fullstack II** (Duoc UC).
 
-**Versión 2 (Evaluación Parcial N°2):** aplicación **React** con navegación por **React Router**, diseño responsivo con **Bootstrap 5** y una **API REST simulada con json-server**. La versión 1 (HTML + JavaScript puro) queda en el historial de Git.
+**Versión 2 (Evaluación Parcial N°2):** aplicación **React** con navegación por **React Router**, diseño responsivo con **Bootstrap 5** y una **API REST simulada con json-server**. La versión 1 (HTML + JavaScript puro) está en el repositorio original del equipo: https://github.com/MVJ-Dev/the-iron-blade-barbershop
 
 ## Integrantes
 
@@ -12,6 +12,7 @@ Tienda online de una barbería desarrollada para **DSY1104 - Desarrollo Fullstac
 ## Requisitos
 
 - Node.js 18 o superior (probado con Node 22) y npm.
+- Para las pruebas unitarias: Google Chrome o Microsoft Edge (Karma los detecta automáticamente; también se puede indicar otro navegador Chromium con la variable `CHROME_BIN`).
 
 ## Cómo ejecutar
 
@@ -34,8 +35,8 @@ Otros comandos:
 | Comando | Qué hace |
 |---|---|
 | `npm run reset-db` | Restaura `server/db.json` con los datos iniciales (`server/db.seed.json`). Útil antes de presentar. |
-| `npm test` | Ejecuta las pruebas unitarias (Vitest). |
-| `npm run test:cobertura` | Pruebas + reporte de cobertura. |
+| `npm test` | Ejecuta las 61 pruebas unitarias con **Jasmine + Karma** en Chrome headless y muestra la cobertura (reporte HTML en `coverage/html/index.html`). |
+| `npm run test:navegador` | Abre Chrome con el reporte visual de Jasmine y vuelve a ejecutar las pruebas al guardar cambios. |
 | `npm run build` | Compila la app para producción en `dist/`. |
 
 ## Cuentas de prueba
@@ -72,7 +73,8 @@ src/
 ├── utils/        Validaciones y formatos
 ├── data/         Regiones y comunas
 ├── pages/        tienda/* y admin/*
-└── __tests__/    Pruebas unitarias
+└── __tests__/    Pruebas unitarias Jasmine (*.spec.js)
+karma.conf.cjs    Configuración de Karma
 server/           db.json (API) y db.seed.json (datos iniciales)
 docs/             ERS v1, ERS v2 y documento de cobertura de testing
 ```
@@ -80,7 +82,7 @@ docs/             ERS v1, ERS v2 y documento de cobertura de testing
 ## Documentación
 
 - `docs/ERS_The_Iron_Blade_v2.md` — Especificación de Requisitos del Software, versión 2.
-- `docs/Cobertura_Testing.md` — Propuesta y análisis de las pruebas.
+- `docs/Cobertura_Testing.md` — Propuesta, configuración y análisis de las pruebas (Jasmine + Karma) y cobertura.
 - `docs/ERS_The_Iron_Blade_v1.md` — ERS de la Evaluación 1 (referencia).
 
 ---

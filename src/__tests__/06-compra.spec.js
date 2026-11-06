@@ -9,7 +9,7 @@ const productos = [
 describe('lógica de compra y filtros', () => {
   it('detecta stock insuficiente y recalcula precios vigentes', () => {
     const { lineas, problemas } = verificarStock([{ productoId: 2, nombre: 'Kit', cantidad: 2 }], productos);
-    expect(problemas).toHaveLength(1);
+    expect(problemas).toHaveSize(1);
     expect(lineas[0].precio).toBe(19990);
   });
 

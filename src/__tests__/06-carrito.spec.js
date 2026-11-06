@@ -6,7 +6,7 @@ const fade = { id: 2, nombre: 'Fade', precio: 11000, precioOferta: 9900, stock: 
 describe('carritoReducer (estado del carrito)', () => {
   it('agrega un producto usando el precio de oferta si existe', () => {
     const estado = carritoReducer([], { tipo: 'agregar', producto: fade });
-    expect(estado).toHaveLength(1);
+    expect(estado).toHaveSize(1);
     expect(estado[0].precio).toBe(9900);
   });
 
