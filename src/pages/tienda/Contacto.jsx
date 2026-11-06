@@ -42,7 +42,7 @@ export default function Contacto() {
     <section className="seccion seccion-oscura">
       <div className="container">
         <TituloSeccion as="h1" titulo="Contacto" subtitulo="Escríbenos tus dudas, sugerencias o pedidos especiales" />
-        <div className="row g-5">
+        <div className="row g-4 g-lg-5">
           <div className="col-lg-6">
             <form className="form-iron ancho" onSubmit={enviar} noValidate>
               {errorEnvio && <div className="alert alert-danger">{errorEnvio}</div>}

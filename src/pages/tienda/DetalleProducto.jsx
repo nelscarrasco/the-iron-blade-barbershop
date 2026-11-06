@@ -46,7 +46,7 @@ export default function DetalleProducto() {
           </ol>
         </nav>
 
-        <div className="row g-5 align-items-start">
+        <div className="row g-4 g-lg-5 align-items-start">
           <div className="col-lg-6">
             <img src={producto.imagen} alt={producto.nombre} className="img-fluid rounded shadow w-100 detalle-imagen" />
           </div>
